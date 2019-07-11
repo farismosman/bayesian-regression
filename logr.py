@@ -122,9 +122,9 @@ if __name__ == "__main__":
     testing_id = testing_data.pop('id')
 
     data = {
-        'noOfTrainingObservation': 250,
-        'noOfTestObservation': 19750,
-        'noOfFeatures': 300,
+        'noOfTrainingObservation': training_data.shape[0],
+        'noOfTestObservation': testing_data.shape[0],
+        'noOfFeatures': training_data.shape[1],
         'y': training_target,                                                                                     
         'x': training_data,
         'xTest': testing_data
