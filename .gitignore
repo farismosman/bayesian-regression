@@ -1,4 +1,4 @@
 *.pkl
 .vscode/
 env/
-data/
+*.zip
